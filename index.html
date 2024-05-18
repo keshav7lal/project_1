@@ -1,12 +1,54 @@
+<!-- NEXUS INFO INTERN 1st project -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>LOGIN and SIGNUP PAGE</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Chela+One&family=Jacquard+12&display=swap" rel="stylesheet">
+    
 </head>
 <body>
-    lets start the intern 1st project
-    
+    <div class="container">
+        <div class="form-container" id="login-form">
+            <h1>Login </h1>
+            <form>
+                <div class="input-type">
+                    <label for="login-email">Email :</label>
+                    <input type="email" id="login-email" required>
+                </div>
+                <div class="input-type">
+                    <label for="login-pass">Password :</label>
+                    <input type="password" id="login-pass" required>
+                </div>
+                <button type="submit">Login</button>
+                <p class="left-align"><a href="#" id="forgot-password">Forgot Password?</a></p>
+                <p>Don't have an account? <span class="toggle-form" onclick="toggleForm()">Sign Up</span></p>
+            </form>
+        </div>
+
+        <div class="form-container hidden" id="signup-form">
+            <h1>Sign Up</h1>
+            <form>
+                <div class="input-type">
+                    <label for="signup-name">Name :</label>
+                    <input type="text" id="signup-name" required>
+                </div>
+                <div class="input-type">
+                    <label for="signup-email">Email :</label>
+                    <input type="email" id="signup-email" required>
+                </div>
+                <div class="input-type">
+                    <label for="signup-password">Password :</label>
+                    <input type="password" id="signup-password" required>
+                </div>
+                <button type="submit">Sign Up</button>
+                <p>Already have an account? <span class="toggle-form" onclick="toggleForm()">Login</span></p>
+            </form>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
 </body>
 </html>
